@@ -9,12 +9,12 @@ const Navbar = ({ searchTerm, setSearchTerm }) => {
   }, [search]);
 
   return (
-    <div className="navbar w-full h-16 flex items-center justify-between flex-wrap gap-4">
+    <div className="navbar w-full h-16 flex items-center justify-between flex-wrap gap-4 pb-24 sm:pb-0">
       <div>
         <p className="text-xl">Cameras</p>
         <p className="text-sm text-gray-500">Manage your cameras here.</p>
       </div>
-      <div className="flex items-center bg-[#F3F3F4] pr-2 rounded-md xs:pb-8">
+      <div className="flex items-center bg-[#F3F3F4] pr-2 rounded-md">
         <input
           type="search"
           placeholder="Search"
