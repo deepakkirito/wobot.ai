@@ -23,6 +23,17 @@ const badgeColor = {
   "-": "border-gray-400 text-gray-400", // Unknown
 };
 
+const columnWidth = {
+  checkbox: "min-w-[50px]",
+  name: "min-w-[220px]",
+  health: "min-w-[130px]",
+  location: "min-w-[140px]",
+  recorder: "min-w-[140px]",
+  tasks: "min-w-[50px]",
+  status: "min-w-[110px]",
+  actions: "min-w-[90px]",
+};
+
 function HealthBadge({ value }) {
   return (
     <span
@@ -131,13 +142,15 @@ export default function CameraTable({
                         )}
                       />
                     </th>
-                    <th className="p-3">NAME</th>
-                    <th className="p-3">HEALTH</th>
-                    <th className="p-3">LOCATION</th>
-                    <th className="p-3">RECORDER</th>
-                    <th className="p-3">TASKS</th>
-                    <th className="p-3">STATUS</th>
-                    <th className="p-3 flex items-center justify-center">
+                    <th className={`p-3 ${columnWidth.name}`}>NAME</th>
+                    <th className={`p-3 ${columnWidth.health}`}>HEALTH</th>
+                    <th className={`p-3 ${columnWidth.location}`}>LOCATION</th>
+                    <th className={`p-3 ${columnWidth.recorder}`}>RECORDER</th>
+                    <th className={`p-3 ${columnWidth.tasks} text-center`}>TASKS</th>
+                    <th className={`p-3 ${columnWidth.status} text-center`}>STATUS</th>
+                    <th
+                      className={`p-3 ${columnWidth.actions} text-center flex items-center justify-center`}
+                    >
                       ACTIONS
                     </th>
                   </tr>
@@ -234,9 +247,9 @@ export default function CameraTable({
                       <td className="p-2 text-gray-700">
                         {item.recorder || "-"}
                       </td>
-                      <td className="p-2">{item.tasks}</td>
+                      <td className="p-2 text-center">{item.tasks}</td>
 
-                      <td className="p-2">
+                      <td className="p-2 text-center">
                         <span
                           className={`px-3 py-1 rounded text-xs font-medium ${
                             item.status === "Active"
