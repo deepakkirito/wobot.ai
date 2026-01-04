@@ -21,7 +21,7 @@ Response received: {
 "message": "Sorry can't find that!"
 }
 
-Also not email key found in api respons Array objects, use object id instead
+Also no email key found in api respons Array objects, use object id instead
 
 ## Technologies Used
 
