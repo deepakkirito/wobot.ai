@@ -44,9 +44,3 @@ This Project uses these technologies:
 Cameras are fetched from the backend using redux toolkit query.
 
 Removed cameras are stored in redux store which is persisted in local storage and is available even after refreshing the page.
-
-## Screenshots
-
-![image](https://drive.google.com/file/d/1ydNMF-vaCMtWQbp1LdkmRcqM3IOvunF0/view?usp=sharing)
-
-![image](https://drive.google.com/file/d/1Gc5Aow2MXz5m6QGBvQZfGdJBAE4UGJCO/view?usp=sharing)
