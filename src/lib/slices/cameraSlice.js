@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  removedCameras: ["sdsd"],
+  removedCameras: [],
 };
 
 const cameraSlice = createSlice({
